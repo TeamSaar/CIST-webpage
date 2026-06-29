@@ -102,7 +102,7 @@ const Navbar = () => {
         </nav>
 
         <div className="navbar-actions">
-          <a href="https://kgr.ac.in" target="_blank" rel="noopener noreferrer" className="btn-admissions desktop-only">
+          <a href="https://forms.gle/bKfXxZLBtKvz1fqSA" target="_blank" rel="noopener noreferrer" className="btn-admissions desktop-only">
             Collaborate With Us
           </a>
           
@@ -128,7 +128,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <a href="https://kgr.ac.in" target="_blank" rel="noopener noreferrer" className="btn-admissions mobile-admissions" onClick={closeMobileMenu}>
+            <a href="https://forms.gle/bKfXxZLBtKvz1fqSA" target="_blank" rel="noopener noreferrer" className="btn-admissions mobile-admissions" onClick={closeMobileMenu}>
               Collaborate With Us
             </a>
           </li>
