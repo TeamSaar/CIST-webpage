@@ -1,7 +1,7 @@
 export const teamMembers = [
-  { id: 1, name: "Dr. P. Samyuktha", designation: "Associate Professor", department: "CSE", email: "samyukthapenta@kgr.ac.in", position: "Head", role: "leadership", photo: "/images/team/samyukta.jpg" },
-  { id: 2, name: "B. Lingam", designation: "Assistant Professor", department: "EEE", email: "lingam@kgr.ac.in", position: "Associate Head", role: "leadership", photo: "/images/team/lingam.jpg" },
-  { id: 3, name: "Dr. A. Seshappa", designation: "Associate Professor", department: "ME", email: "a.seshappa@kgr.ac.in", position: "", role: "faculty", photo: "/images/team/seshappa.jpg" },
+  { id: 1, name: "Dr. P. Samyuktha", designation: "Dean Of Innovation And Entrepreneurship", department: "CSE", email: "samyukthapenta@kgr.ac.in", position: "", role: "leadership", photo: "/images/team/samyukta.jpg" },
+  { id: 2, name: "B. Lingam", designation: "Head", department: "EEE", email: "lingam@kgr.ac.in", position: "", role: "leadership", photo: "/images/team/lingam.jpg" },
+
   { id: 5, name: "B. Mohan Venkat Sai Krishna", designation: "Programme Associate", department: "H&S", email: "mohanvenkatsai@kgr.ac.in", position: "", role: "faculty", photo: "/images/team/mohan.jpg" },
   { id: 6, name: "G. Ravi Kumar", designation: "Assistant Professor", department: "Civil", email: "gravikumar@kgr.ac.in", position: "", role: "faculty", photo: "/images/team/ravi.jpg" },
   { id: 7, name: "M. Laxman", designation: "Assistant Professor", department: "ME", email: "laxmanm@kgr.ac.in", position: "", role: "faculty", photo: "/images/team/laxman.jpg" },

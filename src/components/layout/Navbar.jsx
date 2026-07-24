@@ -13,7 +13,7 @@ const Navbar = () => {
       setScrolled(window.scrollY > 50);
       
       // Update active link based on scroll position
-      const sections = ['home', 'about', 'awards', 'courses', 'projects', 'team', 'activities', 'footer'];
+      const sections = ['home', 'about', 'awards', 'courses', 'partners', 'projects', 'team', 'activities', 'gallery', 'footer'];
       let currentSection = 'home';
       
       for (const section of sections) {
@@ -37,19 +37,23 @@ const Navbar = () => {
   useEffect(() => {
     if (scrolled) {
       gsap.to(".navbar", {
-        padding: "10px 0",
-        backgroundColor: "rgba(255, 255, 255, 0.95)",
-        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
-        backdropFilter: "blur(10px)",
+        padding: "8px 0",
+        backgroundColor: "#ffffff",
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+        backdropFilter: "none",
+        webkitBackdropFilter: "none",
+        borderBottom: "1px solid #e5e7eb",
         duration: 0.3,
         ease: "power2.out"
       });
     } else {
       gsap.to(".navbar", {
-        padding: "15px 0",
-        backgroundColor: "rgba(255, 255, 255, 1)",
-        boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
-        backdropFilter: "blur(0px)",
+        padding: "16px 0",
+        backgroundColor: "#ffffff",
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
+        backdropFilter: "none",
+        webkitBackdropFilter: "none",
+        borderBottom: "1px solid #e5e7eb",
         duration: 0.3,
         ease: "power2.out"
       });
@@ -69,18 +73,20 @@ const Navbar = () => {
     { id: 'about', label: 'About' },
     { id: 'awards', label: 'Awards' },
     { id: 'courses', label: 'Courses' },
+    { id: 'partners', label: 'Partners' },
     { id: 'projects', label: 'Projects' },
     { id: 'team', label: 'Team' },
     { id: 'activities', label: 'Activities' },
+    { id: 'gallery', label: 'Gallery' },
     { id: 'footer', label: 'Contact Us' },
   ];
 
   return (
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="container navbar-container">
+      <div className="navbar-container">
         <div className="navbar-logo">
           <a href="#home">
-            <img src="/images/logos/kg-reddy.png" alt="KG Reddy Logo" className="logo-img" style={{height: '3rem', width: 'auto', transform: 'scale(1.8)', transformOrigin: 'left center'}} loading="lazy" />
+            <img src="/images/logos/kg-reddy.png" alt="KG Reddy Logo" className="logo-img" loading="lazy" />
           </a>
         </div>
 

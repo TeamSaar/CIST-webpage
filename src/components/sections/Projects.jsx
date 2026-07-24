@@ -55,21 +55,8 @@ const Projects = () => {
         <div className="project-card-content">
           <h4 className="project-card-title">{proj.title}</h4>
           {proj.investigator && <p className="project-card-investigator">Investigator: {proj.investigator}</p>}
-          <div className="project-card-footer">
-            {getStatusBadge(proj.status || (isOngoing ? 'Ongoing' : 'Deployed'))}
-            {proj.amount && <span className="project-amount">{proj.amount}</span>}
-          </div>
-          {isOngoing && proj.progress && (
-            <div className="mt-4">
-              <div className="progress-bar-container">
-                <div 
-                  className="progress-bar-fill"
-                  style={{ width: `${proj.progress}%` }}
-                ></div>
-              </div>
-              <span className="progress-label" style={{display:'block', textAlign:'right', fontSize:'0.8rem', marginTop:'4px'}}>{proj.progress}% Complete</span>
-            </div>
-          )}
+
+
         </div>
       </div>
     );

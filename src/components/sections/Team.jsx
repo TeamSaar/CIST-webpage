@@ -67,13 +67,10 @@ const Team = () => {
                 <div key={member.id} className="team-card leadership-card">
                   <div className="member-photo-wrapper">
                     {member.photo ? <img src={member.photo} alt={member.name} loading="lazy" /> : <PhotoPlaceholder />}
-                    <div className="leadership-badge">
-                      {member.position === 'Head' ? '👑' : '⭐'}
-                    </div>
                   </div>
                   <div className="member-info text-center">
                     <h3 className="member-name text-white">{member.name}</h3>
-                    <p className="member-designation text-white opacity-90">{member.designation}</p>
+                    <p className="member-designation text-secondary font-semibold">{member.designation}</p>
                     <p className="member-position text-secondary font-bold uppercase tracking-wide text-sm">{member.position}</p>
                     <a href={`mailto:${member.email}`} className="member-email text-white opacity-80 hover-secondary mt-2 inline-flex items-center gap-2">
                       <FiMail /> {member.email}
@@ -97,7 +94,6 @@ const Team = () => {
                       <p className="member-designation text-muted text-sm mb-2">{member.designation}</p>
                       
                       <div className="flex justify-center gap-2 mb-3">
-                        <Badge label={member.department} color={getDepartmentColor(member.department)} />
                         <Badge label={member.role === 'teaching-assistant' ? 'Teaching Assistant' : 'Faculty'} color="light" />
                       </div>
                       

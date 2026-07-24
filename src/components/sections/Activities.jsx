@@ -16,14 +16,13 @@ const Activities = () => {
   
   const sdg = [
     "EWB Student Chapter Activities",
-    "UBA Activities",
-    "STEM Activities"
+    "UBA Activities"
   ];
   
   const extension = [
-    "Ideathon & Hackathon for CIST Courses",
-    "SDG-Related Events",
-    "Sahyog with KASE"
+    "Ideathon & Hackathon",
+    "Sahyog",
+    "STEM Activities"
   ];
 
   useEffect(() => {
